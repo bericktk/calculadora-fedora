@@ -1,31 +1,101 @@
-# Create React App
+# 🧮 Calculadora React - Estilo Fedora
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+Este projeto é uma **calculadora funcional** construída com **React**, inspirada no design moderno e no tema escuro da calculadora do sistema operacional **Fedora**.
 
-## Deploy Your Own
+---
 
-Deploy your own Create React App project with Vercel.
+## 🚀 Funcionalidades
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/create-react-app&template=create-react-app)
+- **Operações Básicas**: Adição, subtração, multiplicação e divisão.
+- **Funções Matemáticas**:
+  - Parênteses `( )` para agrupamento de operações.
+  - Raiz quadrada `√`.
+  - Potência ao quadrado `x²`.
+  - Módulo (`mod`).
+  - Número Pi `π`.
+  - Percentagem `%`.
+- **Layout Moderno**: Interface escura com disposição dos botões baseada na calculadora do Fedora.
+- **Design Responsivo**: Adapta-se bem a diferentes tamanhos de tela (otimizada para visualização vertical).
+- **Cálculo de Expressões**: Avaliação completa com respeito à ordem das operações e parênteses.
 
-_Live Example: https://create-react-template.vercel.app/_
+---
 
-## Available Scripts
+## 🛠️ Tecnologias Utilizadas
 
-In the project directory, you can run:
+Este projeto foi construído com as seguintes tecnologias modernas da web:
 
-### `npm start`
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **JavaScript (ES6+)**: Lógica da calculadora.
+- **CSS3**: Estilização dos componentes com layout em Grid e tema escuro.
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+## ⚙️ Como Executar o Projeto
 
-### `npm test`
+Siga os passos abaixo para rodar o projeto localmente:
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Clone o repositório
 
-### `npm run build`
+```bash
+git clone https://github.com/bericktk/calculadora-fedora-react.git
+```
 
-Builds the app for production to the `build` folder.
+### 2. Acesse a pasta do projeto
 
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+```bash
+cd calculadora-fedora-react
+```
+
+### 3. Instale as dependências
+
+```bash
+npm install
+```
+
+### 4. Inicie a aplicação
+
+```bash
+npm start
+```
+
+O navegador abrirá automaticamente em: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+src/
+├── componentes/
+│   ├── Botoes.js      # Componente reutilizável para cada botão
+│   ├── Botoes.css     # Estilos específicos dos botões
+│   ├── Display.js     # Componente do visor da calculadora
+│   └── Display.css    # Estilos do visor
+│
+├── App.js             # Componente principal com a lógica da calculadora
+└── App.css            # Estilos globais e layout geral
+```
+
+### Descrição dos principais arquivos:
+
+- **App.js**: Gerencia o estado da calculadora (valor no visor, expressão completa) e implementa a lógica de cálculo.
+- **componentes/Display.js**: Exibe o valor atual e a expressão no visor.
+- **componentes/Botoes.js**: Componente para os botões da calculadora, reutilizável e estilizado via props.
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+
+## 🙌 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir _issues_ ou enviar _pull requests_ com melhorias, correções ou novas funcionalidades.
+
+---
+
+## ✨ Autor
+
+Desenvolvido por **[Bruno Erick](https://github.com/bericktk)**.

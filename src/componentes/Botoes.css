@@ -1,0 +1,47 @@
+.botao {
+  background-color: #525252;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  height: 60px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao:hover {
+  background-color: #616161;
+}
+
+.botao:active {
+  background-color: #707070;
+}
+
+.botao.funcao {
+  background-color: #616161;
+}
+.botao.funcao:hover {
+  background-color: #707070;
+}
+
+.botao.operador {
+  color: #e6e6e6;
+  font-weight: bold;
+}
+
+.botao.igual {
+  grid-row: span 2;
+  background-color: #3584e4;
+  height: auto;
+}
+
+.botao.igual:hover {
+  background-color: #4a90e2;
+}
+
+.botao.zero {
+  grid-column: span 1;
+}
